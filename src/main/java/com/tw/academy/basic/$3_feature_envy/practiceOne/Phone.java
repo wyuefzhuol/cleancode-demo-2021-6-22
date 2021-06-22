@@ -5,13 +5,11 @@ public class Phone {
     private final String prefix;
     private final String number;
     public Phone(String unformattedNumber) {
-        this.areaCode = unformattedNumber.substring(0,3);
-        this.prefix = unformattedNumber.substring(3,6);
-        this.number = unformattedNumber.substring(6,10);
+        areaCode = unformattedNumber.substring(0,3);
+        prefix = unformattedNumber.substring(3,6);
+        number = unformattedNumber.substring(6,10);
     }
     public String getMobilePhoneNumber() {
-        return "(" + this.areaCode + ") " +
-                this.prefix + "-" +
-                this.number;
+        return "(" + areaCode + ") " + prefix + "-" + number;
     }
 }
