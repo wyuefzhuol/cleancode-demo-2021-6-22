@@ -8,9 +8,7 @@ public class Customer {
     }
 
     public String getMobilePhoneNumber() {
-        return "(" +
-                mobilePhone.getAreaCode() + ") " +
-                mobilePhone.getPrefix() + "-" +
-                mobilePhone.getNumber();
+        return this.mobilePhone.getMobilePhoneNumber();
     }
+
 }
