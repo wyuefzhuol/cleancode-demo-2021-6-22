@@ -7,3 +7,5 @@
 [magic number] [OrderReceipt.java] extract magic number as constant
 
 [naming] [OrderReceipt.java] rename output --> orderReceiptContent
+
+[long method] [OrderReceipt.java] extract getReceiptHeader method
