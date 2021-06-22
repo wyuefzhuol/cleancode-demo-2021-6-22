@@ -12,7 +12,7 @@ public class Address {
     }
 
     public String getCity() {
-        return address.substring(address.indexOf("省") + 1, address.indexOf("市"));
+        return city;
     }
 
     public String getProvince() {
