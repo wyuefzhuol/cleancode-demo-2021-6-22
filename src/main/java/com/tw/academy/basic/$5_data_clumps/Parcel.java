@@ -36,6 +36,6 @@ public class Parcel {
     }
 
     private String getSenderPhoneNumber() {
-        return senderPhoneNumber;
+        return this.sender.getPhoneNumber();
     }
 }
