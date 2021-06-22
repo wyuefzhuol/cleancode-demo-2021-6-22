@@ -31,7 +31,11 @@ public class Parcel {
     public String confirmReceiver(){
         return String.format("Please confirm receiver information: receiver name is %s, " +
                         "receiver phone number is %s and receiver address is %s.\n",
-                this.receiver.getName(), receiverPhoneNumber, receiverAddress);
+                this.receiver.getName(), getReceiverPhoneNumber(), receiverAddress);
+    }
+
+    private String getReceiverPhoneNumber() {
+        return receiverPhoneNumber;
     }
 
     public String confirmSender(){
