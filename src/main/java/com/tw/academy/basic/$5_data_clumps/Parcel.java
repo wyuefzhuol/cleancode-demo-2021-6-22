@@ -9,6 +9,7 @@ public class Parcel {
     private String senderAddress;
 
     private final User receiver;
+    private final User sender;
 
     public Parcel(String size, Double weight,
                   User receiver, User sender) {
@@ -19,6 +20,7 @@ public class Parcel {
         this.senderAddress = sender.getAddress();
 
         this.receiver = receiver;
+        this.sender = sender;
     }
 
     public String confirmReceiver(){
