@@ -14,6 +14,6 @@ public class Address {
     }
 
     public String getProvince() {
-        return address.substring(0, address.indexOf("省"));
+        return province;
     }
 }
