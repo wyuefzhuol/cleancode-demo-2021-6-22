@@ -15,4 +15,16 @@ public class User {
         return String.format("Please confirm buyer information: buyer name is %s, " +
                 "buyer phone number is %s and buyer address is %s.", name, phoneNumber, address);
     }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public String getName() {
+        return name;
+    }
 }
