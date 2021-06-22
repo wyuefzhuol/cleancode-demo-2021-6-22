@@ -32,10 +32,6 @@ public class Parcel {
     public String confirmSender(){
         return String.format("Please confirm sender information: sender name is %s, " +
                         "sender phone number is %s and sender address is %s.\n",
-                this.sender.getName(), this.sender.getPhoneNumber(), getSenderAddress());
-    }
-
-    private String getSenderAddress() {
-        return this.sender.getAddress();
+                this.sender.getName(), this.sender.getPhoneNumber(), this.sender.getAddress());
     }
 }
