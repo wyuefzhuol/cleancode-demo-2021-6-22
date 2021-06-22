@@ -12,6 +12,8 @@ public class Parcel {
     private String senderPhoneNumber;
     private String senderAddress;
 
+    private User receiver;
+
     public Parcel(String size, Double weight,
                   User receiver, String senderName, String senderPhoneNumber, String senderAddress) {
         this.size = size;
@@ -22,6 +24,8 @@ public class Parcel {
         this.senderName = senderName;
         this.senderPhoneNumber = senderPhoneNumber;
         this.senderAddress = senderAddress;
+
+        this.receiver = receiver;
     }
 
     public String confirmReceiver(){
