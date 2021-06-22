@@ -8,6 +8,8 @@ public class Order {
     private String buyerPhoneNumber;
     private String buyerAddress;
 
+    private User user;
+
     public Order(int orderNumber, String buyerName, String buyerPhoneNumber, String buyerAddress) {
         this.orderNumber = orderNumber;
 
