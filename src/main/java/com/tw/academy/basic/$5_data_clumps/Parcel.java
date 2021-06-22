@@ -36,6 +36,6 @@ public class Parcel {
     }
 
     private String getSenderName() {
-        return senderName;
+        return this.sender.getName();
     }
 }
