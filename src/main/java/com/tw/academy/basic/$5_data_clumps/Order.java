@@ -16,6 +16,8 @@ public class Order {
         this.buyerName = buyerName;
         this.buyerPhoneNumber = buyerPhoneNumber;
         this.buyerAddress = buyerAddress;
+
+        this.user = new User(buyerName, buyerPhoneNumber, buyerAddress);
     }
 
     public String confirm(){
