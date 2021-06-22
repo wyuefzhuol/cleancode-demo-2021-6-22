@@ -32,10 +32,13 @@ public class OrderReceipt {
             totalLineItemAmount += lineItem.getTotalLineItemAmount();
         }
 
-        orderReceiptContent.append(SALES_TAX_STRING).append(TAB_CHAR).append(totSalesTax);
-
-        orderReceiptContent.append(TOTAL_AMOUNT_STRING).append(TAB_CHAR).append(totalLineItemAmount);
+        receiptAddFooter(orderReceiptContent, totSalesTax, totalLineItemAmount);
         return orderReceiptContent.toString();
+    }
+
+    private void receiptAddFooter(StringBuilder orderReceiptContent, double totSalesTax, double totalLineItemAmount) {
+        orderReceiptContent.append(SALES_TAX_STRING).append(TAB_CHAR).append(totSalesTax);
+        orderReceiptContent.append(TOTAL_AMOUNT_STRING).append(TAB_CHAR).append(totalLineItemAmount);
     }
 
     private void receiptAddLineItemContent(StringBuilder orderReceiptContent, LineItem lineItem) {
