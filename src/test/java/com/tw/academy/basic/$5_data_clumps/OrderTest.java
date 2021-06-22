@@ -13,4 +13,14 @@ public class OrderTest {
 
         assertEquals(expect, confirmMessage);
     }
+
+    @Test
+    public void should_confirm_receiver_information_with_user_constructor(){
+        User buyer = new User("Tom", "13132323232", "Wuhan");
+        Order order = new Order(1, buyer);
+        String confirmMessage = order.confirm();
+        String expect = "Please confirm buyer information: buyer name is Tom, buyer phone number is 13132323232 and buyer address is Wuhan.";
+
+        assertEquals(expect, confirmMessage);
+    }
 }
