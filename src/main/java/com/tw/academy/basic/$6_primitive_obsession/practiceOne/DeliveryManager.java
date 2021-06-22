@@ -4,8 +4,8 @@ public class DeliveryManager {
     String toAddress;
     Address fromAddress;
 
-    public DeliveryManager(Address fromAddress, String toAddress) {
-        this.toAddress = toAddress;
+    public DeliveryManager(Address fromAddress, Address address) {
+        this.toAddress = address.getAddress();
         this.fromAddress = fromAddress;
     }
 
