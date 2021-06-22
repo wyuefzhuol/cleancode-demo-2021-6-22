@@ -14,10 +14,10 @@ public class DeliveryManager {
     }
 
     public DeliverCenter allocate(){
-        if (getProvince(toAddress).equals(this.fromAddress.getProvince()) && getCity(toAddress).equals(this.fromAddress.getCity())){
+        if (this.toAdd.getProvince().equals(this.fromAddress.getProvince()) && this.toAdd.getCity().equals(this.fromAddress.getCity())){
             return DeliverCenter.LOCAL;
         }
-        if (getProvince(toAddress).equals(this.fromAddress.getProvince())) {
+        if (this.toAdd.getProvince().equals(this.fromAddress.getProvince())) {
             return DeliverCenter.PROVINCE;
         }
         return DeliverCenter.FOREIGN;
