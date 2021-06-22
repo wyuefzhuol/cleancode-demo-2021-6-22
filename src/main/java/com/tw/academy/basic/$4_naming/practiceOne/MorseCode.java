@@ -56,8 +56,8 @@ public class MorseCode {
         englishToMorseLib.forEach((k, v) -> morseLibToEnglish.put(v, k));
     }
 
-    public static String get(String code) {
-       return morseLibToEnglish.getOrDefault(code, null);
+    public static String getMorseLibToEnglishMap(String morseLib) {
+       return morseLibToEnglish.getOrDefault(morseLib, null);
     }
 
 }
