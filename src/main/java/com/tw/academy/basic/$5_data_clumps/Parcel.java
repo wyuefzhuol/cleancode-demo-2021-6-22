@@ -12,7 +12,7 @@ public class Parcel {
     private String senderPhoneNumber;
     private String senderAddress;
 
-    private User receiver;
+    private final User receiver;
 
     public Parcel(String size, Double weight,
                   User receiver, String senderName, String senderPhoneNumber, String senderAddress) {
