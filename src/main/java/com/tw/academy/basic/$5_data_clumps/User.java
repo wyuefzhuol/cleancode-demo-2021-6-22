@@ -11,15 +11,8 @@ public class User {
         this.address = address;
     }
 
-    public String getAddress() {
-        return address;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getPhoneNumber() {
-        return phoneNumber;
+    public String getConfirmString() {
+        return String.format("Please confirm buyer information: buyer name is %s, " +
+                "buyer phone number is %s and buyer address is %s.", name, phoneNumber, address);
     }
 }
