@@ -11,3 +11,5 @@
 [long method] [OrderReceipt.java] extract getReceiptHeader method
 
 [long method] [OrderReceipt.java] extract receiptAddLineItemContent method
+
+[feature envy] [LineItem.java] move getSalesTax and getTotalLineItemAmount methods to class LineItem
