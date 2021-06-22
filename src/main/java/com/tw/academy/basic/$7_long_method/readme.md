@@ -9,3 +9,5 @@
 [naming] [OrderReceipt.java] rename output --> orderReceiptContent
 
 [long method] [OrderReceipt.java] extract getReceiptHeader method
+
+[long method] [OrderReceipt.java] extract receiptAddLineItemContent method
