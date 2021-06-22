@@ -35,7 +35,7 @@ public class Parcel {
     }
 
     private String getReceiverPhoneNumber() {
-        return receiverPhoneNumber;
+        return this.receiver.getPhoneNumber();
     }
 
     public String confirmSender(){
